@@ -1,17 +1,12 @@
-import random
+import random 
 
-#def get_choices():
-#    player_choice = input("Enter a choice (rock, paper, scissors: ")
-#    computer_choice = "paper"
-#    choices = {"player": player_choice, "computer": computer_choice}
+def get_choices():
+    options = ['rock', 'paper', 'scissors']
+    user_choice = input("Enter a choice (paper, rock, scissors): ")
+    computer_choice = random.choice(options)
+    choices = {"user": user_choice, "computer": computer_choice}
     
-#    return choices
+    return choices
 
-
-#choices = get_choices()
-#print(choices)
-
-
-food = ['eggs', 'carrots', 'pizza']
-dinner = random.choice(food)
-print(dinner)
+choice = get_choices()
+print(choice)
